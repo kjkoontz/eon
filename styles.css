@@ -1,0 +1,45 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+body {
+  background-color: DarkSlateBlue;
+  color: Gainsboro
+  }
+
+.header {
+  background-color: DarkSlateGrey;
+  padding: 10px;
+  text-align: center;
+  }
+.header h1 {
+  font-size: 50px;
+  font-family: 'Aladin', cursive, sans-serif;
+  }
+
+.topnav {
+  overflow: auto;
+  background-color: #500e47;
+  }
+.topnav a {
+  float: left;
+  display: inline-block;
+  color: Gainsboro;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  }
+.topnav a:hover {
+  background-color: grey;
+  color:Gainsboro;
+  }
+
+h2 {
+  text-align: center;
+  border: 2px solid Gainsboro;
+  background-color: RoyalBlue;
+  margin: 0 500px 0 500px;
+  padding: 20px;
+  }
+p {
+  text-align: center;
+  }
