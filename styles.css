@@ -1,13 +1,29 @@
 /*fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swa');
+
+/*includes padding and border in width/height*/
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 20px; /* height of the footer */
+}
 
 body {
-  background-color: DarkSlateBlue;
-  color: Gainsboro
+  background-color: #355c7d;
+  color: #ffedda;
+  padding: 10px;
   }
 
 .header {
-  background-color: DarkSlateGrey;
+  background-color: #6c5b7b;
+  background-image: linear-gradient(#355c7d, #6c5b7b, #c06c84, #f8b195);
   padding: 10px;
   text-align: center;
   }
@@ -18,28 +34,73 @@ body {
 
 .topnav {
   overflow: auto;
-  background-color: #500e47;
+  background-color: #6c5b7b;
   }
 .topnav a {
   float: left;
   display: inline-block;
-  color: Gainsboro;
+  color: #ffedda;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
   }
 .topnav a:hover {
-  background-color: grey;
-  color:Gainsboro;
+  background-color: #f8b195;
+  color: #355c7d;
   }
 
-h2 {
-  text-align: center;
-  border: 2px solid Gainsboro;
-  background-color: RoyalBlue;
-  margin: 0 500px 0 500px;
-  padding: 20px;
+.leftcolumn {
+  float: left;
+  width: 75%;
   }
-p {
+.rightcolumn {
+  float: right;
+  width: 25%;
+  background-color: #355c7d;
+  padding-left: 20px;
+  }
+.column5 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+.card {
+  background-color: #c06c84;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #6c5b7b;
+  background-image: linear-gradient( #f8b195, #c06c84, #355c7d);
+  margin-top: 20px;
+  }
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn, .column5 {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
   }
